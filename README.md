@@ -1,1 +1,6 @@
-# mbti-app-2025
+# mbti-2025
+
+### Run Project
+```
+npm run dev
+```
