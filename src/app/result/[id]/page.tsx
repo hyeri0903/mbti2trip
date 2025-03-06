@@ -4,9 +4,9 @@ import React from 'react'
 //https://blog.naver.com/airteltour/223128816384
 
 const Result = () => {
-  return (
-      <div>Result Page</div>
-  )
+    return (
+        <div>Result Page</div>
+    )
 }
 
 export default Result

@@ -2,7 +2,7 @@
 'use client';
 
 import React from "react";
-import { useRouter, useParams } from 'next/navigation';
+import { useRouter } from 'next/navigation';
 
 const questions = [
   { id: 1, question: "당신은 새로운 사람들과 쉽게 어울리나요?", options: ["예", "아니요"] },
@@ -10,7 +10,7 @@ const questions = [
   { id: 3, question: "감정보다 논리를 우선하나요?", options: ["예", "아니요"] },
 ];
 
-export default function TestPage(props: any) {
+export default function TestPage(props) {
   const router = useRouter();
   const questionIndex = parseInt(props.params.id)-1
   const isLastQuestion = questionIndex === questions.length - 1;

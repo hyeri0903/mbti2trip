@@ -57,7 +57,11 @@
     --text-sm--line-height: calc(1.25 / .875);
     --text-base: 1rem;
     --text-base--line-height: calc(1.5 / 1);
+    --text-4xl: 2.25rem;
+    --text-4xl--line-height: calc(2.5 / 2.25);
     --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+    --radius-md: .375rem;
     --shadow-sm: 0 1px 3px 0 #0000001a, 0 1px 2px -1px #0000001a;
     --shadow-md: 0 4px 6px -1px #0000001a, 0 2px 4px -2px #0000001a;
     --shadow-lg: 0 10px 15px -3px #0000001a, 0 4px 6px -4px #0000001a;
@@ -357,6 +361,14 @@
     }
   }
 
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
+  }
+
+  .mt-20 {
+    margin-top: calc(var(--spacing) * 20);
+  }
+
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
   }
@@ -409,6 +421,14 @@
     min-height: 100vh;
   }
 
+  .w-\[300px\] {
+    width: 300px;
+  }
+
+  .w-full {
+    width: 100%;
+  }
+
   .flex-shrink {
     flex-shrink: 1;
   }
@@ -419,6 +439,10 @@
 
   .transform {
     transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
+  }
+
+  .cursor-pointer {
+    cursor: pointer;
   }
 
   .resize {
@@ -485,6 +509,10 @@
     border-radius: 3.40282e38px;
   }
 
+  .rounded-md {
+    border-radius: var(--radius-md);
+  }
+
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
@@ -515,8 +543,16 @@
     background-color: color-mix(in oklab, var(--color-black) 5%, transparent);
   }
 
+  .bg-blue-500 {
+    background-color: var(--color-blue-500);
+  }
+
   .bg-foreground {
     background-color: var(--foreground);
+  }
+
+  .p-2 {
+    padding: calc(var(--spacing) * 2);
   }
 
   .p-8 {
@@ -539,6 +575,10 @@
     padding-block: calc(var(--spacing) * .5);
   }
 
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
+
   .pb-20 {
     padding-bottom: calc(var(--spacing) * 20);
   }
@@ -555,9 +595,19 @@
     font-family: var(--font-geist-sans);
   }
 
+  .text-4xl {
+    font-size: var(--text-4xl);
+    line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
+  }
+
+  .font-bold {
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
   }
 
   .font-semibold {
@@ -567,6 +617,10 @@
 
   .text-background {
     color: var(--background);
+  }
+
+  .text-white {
+    color: var(--color-white);
   }
 
   .capitalize {
@@ -678,6 +732,12 @@
   }
 
   @media (hover: hover) {
+    .hover\:bg-blue-700:hover {
+      background-color: var(--color-blue-700);
+    }
+  }
+
+  @media (hover: hover) {
     .hover\:underline:hover {
       text-decoration-line: underline;
     }
@@ -687,6 +747,20 @@
     .hover\:underline-offset-4:hover {
       text-underline-offset: 4px;
     }
+  }
+
+  .focus\:ring-2:focus {
+    --tw-ring-shadow: var(--tw-ring-inset, ) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color, currentColor);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
+
+  .focus\:ring-blue-500:focus {
+    --tw-ring-color: var(--color-blue-500);
+  }
+
+  .focus\:outline-none:focus {
+    --tw-outline-style: none;
+    outline-style: none;
   }
 
   @media (width >= 40rem) {
