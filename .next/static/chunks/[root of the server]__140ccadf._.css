@@ -149,6 +149,8 @@
     --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
+    --text-6xl: 3.75rem;
+    --text-6xl--line-height: 1;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
     --radius-md: .375rem;
@@ -507,12 +509,36 @@
     height: calc(var(--spacing) * 10);
   }
 
+  .h-\[200px\] {
+    height: 200px;
+  }
+
+  .h-\[688px\] {
+    height: 688px;
+  }
+
+  .h-screen {
+    height: 100vh;
+  }
+
   .min-h-screen {
     min-height: 100vh;
   }
 
+  .w-3 {
+    width: calc(var(--spacing) * 3);
+  }
+
+  .w-\[200px\] {
+    width: 200px;
+  }
+
   .w-\[300px\] {
     width: 300px;
+  }
+
+  .w-\[480px\] {
+    width: 480px;
   }
 
   .w-full {
@@ -695,6 +721,11 @@
     line-height: var(--tw-leading, var(--text-4xl--line-height));
   }
 
+  .text-6xl {
+    font-size: var(--text-6xl);
+    line-height: var(--tw-leading, var(--text-6xl--line-height));
+  }
+
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
@@ -708,6 +739,10 @@
   .font-semibold {
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
+  }
+
+  .whitespace-pre-wrap {
+    white-space: pre-wrap;
   }
 
   .text-background {

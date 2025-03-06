@@ -4,7 +4,7 @@ import React from 'react';
 import {useState} from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { recommendation } from '@/data/recommendation';
+import { recommendation } from '@/data/resultData';
 
 export default function Home() {
     const [text, setText] = useState("");
@@ -28,6 +28,12 @@ export default function Home() {
         }
     }
 
+    const handleKeyPress = (e) => {
+        if (e.key == "Enter") {
+            handleClickButton();
+        }
+    }
+
     return (
         <div>
             <main className="flex flex-col gap-8 row-start-2 items-center">
@@ -39,16 +45,14 @@ export default function Home() {
                         type="text"
                         value={text}
                         onChange={handleChange}
+                        onKeyDown={handleKeyPress}
                         placeholder="MBTI를 입력하세요. 예) ENFJ"
                         className="w-[300px] p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                     />
 
                 </div>
                 <div>
-                    {text}
-                </div>
-                <div>
-                    { !isExist && <div>존재하지 않는 MBTI인 것 같네요😿</div>}
+                    { !isExist && <div>존재하지 않는 MBTI인 것 같아요😿</div>}
                 </div>
                 <div>
                     <button className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 cursor-pointer"
