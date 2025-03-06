@@ -4,6 +4,7 @@ import React from 'react';
 import {useState} from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { recommendation } from '@/data/recommendation';
 
 export default function Home() {
     const [text, setText] = useState("");
