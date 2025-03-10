@@ -10,7 +10,7 @@ export default function Home() {
     const [isExist, setIsExist] = useState(true);
     const router = useRouter();
 
-    const handleChange = (e) => {
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setText(e.target.value);
     }
 
@@ -27,7 +27,7 @@ export default function Home() {
         }
     }
 
-    const handleKeyPress = (e) => {
+    const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
         if (e.key == "Enter") {
             handleClickButton();
         }
