@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 39, "column": 0}, "map": {"version":3,"sources":["file:///Users/hailey/Desktop/study/mbti-app-2025/src/app/components/AddToCart.tsx"],"sourcesContent":["'use client';\n\nimport React from 'react'\n\nconst AddToCart = () => {\n  return (\n    <>\n         <button onClick={() => console.log('AddToCart')}>\n            Add to Cart\n        </button>\n    </>\n  )\n}\n\nexport default AddToCart"],"names":[],"mappings":";;;;AAAA;;AAIA,MAAM,YAAY;IAChB,qBACE;kBACK,cAAA,8OAAC;YAAO,SAAS,IAAM,QAAQ,GAAG,CAAC;sBAAc;;;;;;;AAK1D;uCAEe","debugId":null}},
-    {"offset": {"line": 58, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}
