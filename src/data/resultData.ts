@@ -1,7 +1,7 @@
 export const recommendation = [
     {id: 'intj', country: '미국'},
     {id: 'intp', country: '아이슬란드'},
-    {id: 'injf', country: '프랑스'},
+    {id: 'infj', country: '프랑스'},
     {id: 'infp', country: '뉴질랜드'},
     {id: 'istj', country: '영국'},
     {id: 'istp', country: '하와이'},
@@ -93,7 +93,7 @@ export const countries = [
             '\n' +
             '아름다운 자연 경관과 문화적인 다양한 도시입니다.\n' +
             '\n' +
-            '구글,애플, 넷플릭스 본사가 있는 실리콘밸리가 있습니다.'
+            '미국에는 구글,애플, 넷플릭스 본사가 있는 실리콘밸리가 있습니다.'
     },
     {
         country: '포르투갈', emoji: '🇵🇹', content: ' 예술, 역사, 혁신이 결합된 도시로, \n' +
@@ -105,7 +105,9 @@ export const countries = [
     {
         country: '스페인', emoji: '🇪🇸', content: '활기차고 다채로운 문화가 넘치는 도시로, \n' +
             '\n' +
-            '사람들과의 교류와 감성적인 경험을 동시에 할 수 있습니다.'
+            '사람들과의 교류와 감성적인 경험을 동시에 할 수 있습니다.\n' +
+            '\n' +
+            'ENFJ의 사회적 관심과 열정을 자극합니다.'
     },
     {
         country: '호주', emoji: '🇦🇺', content: '활기찬 도시 분위기와 자연을 동시에 경험할 수 있는 장소\n' +

@@ -509,10 +509,6 @@
     height: calc(var(--spacing) * 10);
   }
 
-  .h-\[200px\] {
-    height: 200px;
-  }
-
   .h-\[688px\] {
     height: 688px;
   }
@@ -527,10 +523,6 @@
 
   .w-3 {
     width: calc(var(--spacing) * 3);
-  }
-
-  .w-\[200px\] {
-    width: 200px;
   }
 
   .w-\[300px\] {
