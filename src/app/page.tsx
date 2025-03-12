@@ -53,46 +53,51 @@ export default function Home() {
     };
 
     return (
-        <div>
-            <main className="flex flex-col gap-8 row-start-2 items-center">
-                <div className="mt-20">
-                    <h1 className="text-4xl font-bold">내 MBTI에 어울리는 해외여행지는 어디일까?</h1>
-                </div>
-                <div className="mt-10">
-                    <input
-                        type="text"
-                        value={text.toUpperCase()}
-                        onChange={handleChange}
-                        onKeyDown={handleKeyPress}
-                        placeholder="MBTI를 입력하세요. 예) ENFJ"
-                        className="w-[300px] p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    />
-                    {filteredMBTIs.length > 0 && (
-                        <ul className="absolute bg-white border rounded-md mt-1 w-[300px] max-h-40 overflow-auto shadow-md">
-                            {filteredMBTIs.map((item) => (
-                                <li
-                                    key={item}
-                                    onClick={() => handleAutocompleteClick(item)}
-                                    className="p-2 cursor-pointer hover:bg-gray-100"
-                                >
-                                    {highlightText(item.toUpperCase(), text)}  {/* 하이라이트된 텍스트 */}
-                                </li>
-                            ))}
-                        </ul>
-                    )}
-                </div>
-                <div>
-                    { !isExist && <div>존재하지 않는 MBTI인 것 같아요😿</div>}
-                </div>
-                <div>
-                    <button className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 cursor-pointer"
-                            onClick={()=> handleClickButton()}
-                    >
-                        내 MBTI와 맞는 해외여행지 보러가기
-                    </button>
-                </div>
-
-            </main>
+        <div className="flex items-center justify-center min-h-screen bg-my_bg_image bg-center">
+            <div className="w-[400px] h-[685px] p-4 bg-white border rounded-lg shadow-lg">
+                <main className="flex flex-col gap-8 row-start-2 items-center p-4">
+                    <div className="mt-20">
+                        <h1 className="text-3xl sm:text-4xl font-bold text-center">
+                            내 MBTI에 어울리는 해외여행지는 <br /> 어디일까?
+                        </h1>
+                    </div>
+                    <div className="relative mt-10 w-full max-w-md">
+                        <input
+                            type="text"
+                            value={text.toUpperCase()}
+                            onChange={handleChange}
+                            onKeyDown={handleKeyPress}
+                            placeholder="MBTI를 입력하세요. 예) ENFJ"
+                            className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        />
+                        {/* 자동완성 리스트 */}
+                        {filteredMBTIs.length > 0 && (
+                            <ul className="absolute bg-white border rounded-md mt-1 w-full max-h-40 overflow-auto shadow-md z-10">
+                                {filteredMBTIs.map((item) => (
+                                    <li
+                                        key={item}
+                                        onClick={() => handleAutocompleteClick(item)}
+                                        className="p-2 cursor-pointer hover:bg-gray-100"
+                                    >
+                                        {highlightText(item.toUpperCase(), text)}  {/* 하이라이트된 텍스트 */}
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
+                    </div>
+                    <div>
+                        {!isExist && <div className="text-red-500">존재하지 않는 MBTI인 것 같아요😿</div>}
+                    </div>
+                    <div>
+                        <button
+                            className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 cursor-pointer mt-4"
+                            onClick={handleClickButton}
+                        >
+                            내 MBTI와 맞는 해외여행지 보러가기
+                        </button>
+                    </div>
+                </main>
+            </div>
         </div>
     );
 }
