@@ -688,6 +688,14 @@
     white-space: pre-wrap;
   }
 
+  .text-\[\#\#1CC800\] {
+    color: # #1cc800;
+  }
+
+  .text-\[\#1CC800\] {
+    color: #1cc800;
+  }
+
   .text-blue-500 {
     color: var(--color-blue-500);
   }

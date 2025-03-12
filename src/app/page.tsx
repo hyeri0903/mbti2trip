@@ -58,7 +58,7 @@ export default function Home() {
                 <main className="flex flex-col gap-8 row-start-2 items-center p-4">
                     <div className="mt-20">
                         <h1 className="text-3xl sm:text-4xl font-bold text-center">
-                            내 <span className="text-green-100">MBTI</span>에 어울리는<br /> 해외 여행지는 <br /> 어디일까?
+                            내 <span className="text-[#1CC800]">MBTI</span>에 어울리는<br /> 해외 여행지는 <br /> 어디일까?
                         </h1>
                     </div>
                     <div className="relative mt-10 w-full max-w-md">
