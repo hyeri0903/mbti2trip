@@ -16,29 +16,32 @@ export default function Result() {
     function handleClickButton() {
         router.push('/')
     }
+
     return (
-        <div className="h-screen flex items-center justify-center">
-            <main className="w-[480px] h-[688px] flex flex-col gap-8 row-start-2 items-center">
-                <div className="mt-20">
-                    <h1 className="text-3xl font-bold">{params.id.toUpperCase()} 에게 꼭 맞는 해외여행지는?</h1>
-                </div>
-                <div>
-                    <h2 className="text-4xl font-bold">{countryData?.country}</h2>
-                </div>
-                <div>
-                    <span className="text-6xl">{countryData?.emoji}</span>
-                </div>
-                <div className="whitespace-pre-wrap text-center">
-                    {countryData?.content}
-                </div>
-                <div>
-                    <button className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 cursor-pointer"
-                            onClick={()=> handleClickButton()}
-                    >
-                        메인으로 돌아가기
-                    </button>
-                </div>
-            </main>
+        <div className="flex items-center justify-center min-h-screen">
+            <div className="w-[400px] h-[685px] p-4 bg-white">
+                <main className="flex flex-col gap-8 row-start-2 items-center p-4">
+                    <div className="mt-10">
+                        <h1 className="text-3xl font-bold text-center">{params.id.toUpperCase()} 에게 꼭 맞는<br /> 해외여행지는?</h1>
+                    </div>
+                    <div>
+                        <h2 className="text-4xl font-bold">{countryData?.country}</h2>
+                    </div>
+                    <div>
+                        <span className="text-6xl">{countryData?.emoji}</span>
+                    </div>
+                    <div className="whitespace-pre-wrap text-center">
+                        {countryData?.content}
+                    </div>
+                    <div>
+                        <button className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 cursor-pointer"
+                                onClick={() => handleClickButton()}
+                        >
+                            메인으로 돌아가기
+                        </button>
+                    </div>
+                </main>
+            </div>
         </div>
     )
 }

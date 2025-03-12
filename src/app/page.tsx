@@ -53,12 +53,12 @@ export default function Home() {
     };
 
     return (
-        <div className="flex items-center justify-center min-h-screen bg-my_bg_image bg-center">
-            <div className="w-[400px] h-[685px] p-4 bg-white border rounded-lg shadow-lg">
+        <div className="min-h-screen flex items-center justify-center">
+            <div className="w-[400px] h-[685px] p-4 bg-[url('/background.jpg')] bg-cover bg-center">
                 <main className="flex flex-col gap-8 row-start-2 items-center p-4">
                     <div className="mt-20">
                         <h1 className="text-3xl sm:text-4xl font-bold text-center">
-                            내 MBTI에 어울리는 해외여행지는 <br /> 어디일까?
+                            내 <span className="text-green-100">MBTI</span>에 어울리는<br /> 해외 여행지는 <br /> 어디일까?
                         </h1>
                     </div>
                     <div className="relative mt-10 w-full max-w-md">
