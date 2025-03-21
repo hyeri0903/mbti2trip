@@ -6,10 +6,24 @@
 This service recommend overseas travel destinations that match your MBTI among the 16 MBTI personality types. 
 Travel destinations are recommended based on your MBTI personality type and the atmosphere of the travel destination.
 
-💡Reference: https://blog.naver.com/eurof153/223766194381
+💡MBTI2Trip APP Link: https://mbti-to-trip.vercel.app/
 
 
 ## 🛠️ Skill Set
-- next.js
-- vercel
+
+|제목|내용|
+|------|---|
+|FE, BE|Next.js|
+|Serve Deployment|vercel|
+|Image download|html2canvas|
+
+
+## Project Screenshot
+
+<img width="378" height="650" alt="image" src="https://github.com/user-attachments/assets/d4cc2555-ceed-444c-b94e-051d516211d2" />
+<img width="378" height="650" alt="image" src="https://github.com/user-attachments/assets/36251496-a225-4066-b7f2-b295f3f61d60" />
+<img width="378" height="650" alt="image" src="https://github.com/user-attachments/assets/b60fa186-6862-4b08-9408-db8a16be8717" />
+<img width="378" height="650" alt="image" src="https://github.com/user-attachments/assets/f6b4ae26-287b-44dc-87a7-86525ff227c4" />
+
+
 
