@@ -129,7 +129,7 @@ const countries = [
     {
         country: '스페인',
         emoji: '🇪🇸',
-        content: '스페인은 활기차고 다채로운 문화가 넘치는 도시로, \n' + '\n' + '사람들과의 교류와 감성적인 경험을 동시에 할 수 있습니다.\n' + '\n' + '특히 바르셀로나와 마드리드의 예술과 역사적 명소는\n' + '\n' + 'ENFJ가 사랑하는 사람들과 진정한 유대감을 형성할 수 있는 기회를 만들어줍니다.'
+        content: '스페인은 활기차고 다채로운 문화가 넘치는 도시로, \n' + '사람들과의 교류와 감성적인 경험을 동시에 할 수 있습니다.\n' + '\n' + '특히 바르셀로나와 마드리드의 예술과 역사적 명소는\n' + 'ENFJ가 사랑하는 사람들과 진정한 유대감을 형성할 수 있는 기회를 만들어줍니다.'
     },
     {
         country: '호주',
@@ -186,6 +186,9 @@ function Result() {
     function handleClickButton() {
         router.push('/');
     }
+    function handleDownloadImage() {
+        const element = document.createElement('a');
+    }
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "flex items-center justify-center min-h-screen",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -203,25 +206,25 @@ function Result() {
                                     children: params.id.toUpperCase()
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/result/[id]/page.tsx",
-                                    lineNumber: 26,
+                                    lineNumber: 31,
                                     columnNumber: 29
                                 }, this),
                                 "에게 꼭 맞는",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/src/app/result/[id]/page.tsx",
-                                    lineNumber: 27,
+                                    lineNumber: 32,
                                     columnNumber: 36
                                 }, this),
                                 "해외여행지는?"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/result/[id]/page.tsx",
-                            lineNumber: 25,
+                            lineNumber: 30,
                             columnNumber: 25
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/result/[id]/page.tsx",
-                        lineNumber: 24,
+                        lineNumber: 29,
                         columnNumber: 21
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -230,12 +233,12 @@ function Result() {
                             children: countryData?.country
                         }, void 0, false, {
                             fileName: "[project]/src/app/result/[id]/page.tsx",
-                            lineNumber: 32,
+                            lineNumber: 37,
                             columnNumber: 25
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/result/[id]/page.tsx",
-                        lineNumber: 31,
+                        lineNumber: 36,
                         columnNumber: 21
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -244,12 +247,12 @@ function Result() {
                             children: countryData?.emoji
                         }, void 0, false, {
                             fileName: "[project]/src/app/result/[id]/page.tsx",
-                            lineNumber: 35,
+                            lineNumber: 40,
                             columnNumber: 25
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/result/[id]/page.tsx",
-                        lineNumber: 34,
+                        lineNumber: 39,
                         columnNumber: 21
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -257,38 +260,55 @@ function Result() {
                         children: countryData?.content
                     }, void 0, false, {
                         fileName: "[project]/src/app/result/[id]/page.tsx",
-                        lineNumber: 37,
+                        lineNumber: 42,
                         columnNumber: 21
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            className: "px-4 py-2 bg-[#296e9D] text-white rounded hover:bg-[#1B3A4B]  cursor-pointer",
-                            onClick: ()=>handleClickButton(),
-                            children: "메인으로 돌아가기"
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/result/[id]/page.tsx",
-                            lineNumber: 41,
-                            columnNumber: 25
-                        }, this)
-                    }, void 0, false, {
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                className: "px-4 py-2 bg-[#296e9D] text-white rounded hover:bg-[#1B3A4B]  cursor-pointer",
+                                onClick: ()=>handleDownloadImage(),
+                                children: "이미지로 저장하기"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/result/[id]/page.tsx",
+                                lineNumber: 46,
+                                columnNumber: 25
+                            }, this),
+                            " ",
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                fileName: "[project]/src/app/result/[id]/page.tsx",
+                                lineNumber: 50,
+                                columnNumber: 35
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                className: "mt-5 px-4 py-2 bg-[#296e9D] text-white rounded hover:bg-[#1B3A4B]  cursor-pointer",
+                                onClick: ()=>handleClickButton(),
+                                children: "메인으로 돌아가기"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/result/[id]/page.tsx",
+                                lineNumber: 51,
+                                columnNumber: 25
+                            }, this)
+                        ]
+                    }, void 0, true, {
                         fileName: "[project]/src/app/result/[id]/page.tsx",
-                        lineNumber: 40,
+                        lineNumber: 45,
                         columnNumber: 21
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/result/[id]/page.tsx",
-                lineNumber: 23,
+                lineNumber: 28,
                 columnNumber: 17
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/result/[id]/page.tsx",
-            lineNumber: 22,
+            lineNumber: 27,
             columnNumber: 13
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/result/[id]/page.tsx",
-        lineNumber: 21,
+        lineNumber: 26,
         columnNumber: 9
     }, this);
 }
