@@ -156,12 +156,12 @@ const countries = [
     {
         country: '포르투갈',
         emoji: '🇵🇹',
-        content: ' 예술, 역사, 혁신이 결합된 도시로, \n' + '\n' + '자유로운 분위기와 창의적인 장소들이 많아\n' + '\n' + ' ENTP에게 흥미로운 경험을 제공해요.'
+        content: '포르투갈은 예술, 역사, 혁신이 결합된 도시로, \n' + '\n' + '자유로운 분위기와 창의적인 장소들이 많아\n' + '\n' + ' ENTP에게 흥미로운 경험을 제공해요.\n' + '\n' + '리스본과 포르투에서 만날 수 있는 알록달록한 아줄레주 타일과 거리 예술은\n' + '\n' + '전통과 현대가 공존하는 독특한 매력을 느낄 수 있어요.\n'
     },
     {
         country: '스페인',
         emoji: '🇪🇸',
-        content: '활기차고 다채로운 문화가 넘치는 도시로, \n' + '\n' + '사람들과의 교류와 감성적인 경험을 동시에 할 수 있습니다.\n' + '\n' + 'ENFJ의 사회적 관심과 열정을 자극합니다.'
+        content: '활기차고 다채로운 문화가 넘치는 도시로, \n' + '\n' + '사람들과의 교류와 감성적인 경험을 동시에 할 수 있습니다.\n' + '\n' + '스페인은 ENFJ의 사회적 관심과 열정을 자극합니다.'
     },
     {
         country: '호주',
@@ -221,18 +221,25 @@ function Result() {
                 className: "flex flex-col gap-8 row-start-2 items-center p-4",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "mt-10",
+                        className: "mt-5",
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
                             className: "text-3xl font-bold text-center",
                             children: [
-                                params.id.toUpperCase(),
-                                " 에게 꼭 맞는",
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "text-[#6DAEDB]",
+                                    children: params.id.toUpperCase()
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/result/[id]/page.tsx",
+                                    lineNumber: 26,
+                                    columnNumber: 29
+                                }, this),
+                                "에게 꼭 맞는",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/src/app/result/[id]/page.tsx",
-                                    lineNumber: 25,
-                                    columnNumber: 105
+                                    lineNumber: 27,
+                                    columnNumber: 36
                                 }, this),
-                                " 해외여행지는?"
+                                "해외여행지는?"
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/result/[id]/page.tsx",
@@ -250,12 +257,12 @@ function Result() {
                             children: countryData?.country
                         }, void 0, false, {
                             fileName: "[project]/src/app/result/[id]/page.tsx",
-                            lineNumber: 28,
+                            lineNumber: 32,
                             columnNumber: 25
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/result/[id]/page.tsx",
-                        lineNumber: 27,
+                        lineNumber: 31,
                         columnNumber: 21
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -264,12 +271,12 @@ function Result() {
                             children: countryData?.emoji
                         }, void 0, false, {
                             fileName: "[project]/src/app/result/[id]/page.tsx",
-                            lineNumber: 31,
+                            lineNumber: 35,
                             columnNumber: 25
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/result/[id]/page.tsx",
-                        lineNumber: 30,
+                        lineNumber: 34,
                         columnNumber: 21
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -277,22 +284,22 @@ function Result() {
                         children: countryData?.content
                     }, void 0, false, {
                         fileName: "[project]/src/app/result/[id]/page.tsx",
-                        lineNumber: 33,
+                        lineNumber: 37,
                         columnNumber: 21
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            className: "px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 cursor-pointer",
+                            className: "px-4 py-2 bg-[#296e9D] text-white rounded hover:bg-[#1B3A4B]  cursor-pointer",
                             onClick: ()=>handleClickButton(),
                             children: "메인으로 돌아가기"
                         }, void 0, false, {
                             fileName: "[project]/src/app/result/[id]/page.tsx",
-                            lineNumber: 37,
+                            lineNumber: 41,
                             columnNumber: 25
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/result/[id]/page.tsx",
-                        lineNumber: 36,
+                        lineNumber: 40,
                         columnNumber: 21
                     }, this)
                 ]

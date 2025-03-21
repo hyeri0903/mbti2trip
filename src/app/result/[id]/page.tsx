@@ -21,8 +21,12 @@ export default function Result() {
         <div className="flex items-center justify-center min-h-screen">
             <div className="w-[400px] h-[685px] p-4 bg-white">
                 <main className="flex flex-col gap-8 row-start-2 items-center p-4">
-                    <div className="mt-10">
-                        <h1 className="text-3xl font-bold text-center">{params.id.toUpperCase()} 에게 꼭 맞는<br /> 해외여행지는?</h1>
+                    <div className="mt-5">
+                        <h1 className="text-3xl font-bold text-center">
+                            <span className="text-[#6DAEDB]">{params.id.toUpperCase()}</span>
+                            에게 꼭 맞는<br />
+                            해외여행지는?
+                        </h1>
                     </div>
                     <div>
                         <h2 className="text-4xl font-bold">{countryData?.country}</h2>
@@ -34,7 +38,7 @@ export default function Result() {
                         {countryData?.content}
                     </div>
                     <div>
-                        <button className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 cursor-pointer"
+                        <button className="px-4 py-2 bg-[#296e9D] text-white rounded hover:bg-[#1B3A4B]  cursor-pointer"
                                 onClick={() => handleClickButton()}
                         >
                             메인으로 돌아가기

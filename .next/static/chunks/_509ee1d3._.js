@@ -124,12 +124,12 @@ const countries = [
     {
         country: '포르투갈',
         emoji: '🇵🇹',
-        content: ' 예술, 역사, 혁신이 결합된 도시로, \n' + '\n' + '자유로운 분위기와 창의적인 장소들이 많아\n' + '\n' + ' ENTP에게 흥미로운 경험을 제공해요.'
+        content: '포르투갈은 예술, 역사, 혁신이 결합된 도시로, \n' + '\n' + '자유로운 분위기와 창의적인 장소들이 많아\n' + '\n' + ' ENTP에게 흥미로운 경험을 제공해요.\n' + '\n' + '리스본과 포르투에서 만날 수 있는 알록달록한 아줄레주 타일과 거리 예술은\n' + '\n' + '전통과 현대가 공존하는 독특한 매력을 느낄 수 있어요.\n'
     },
     {
         country: '스페인',
         emoji: '🇪🇸',
-        content: '활기차고 다채로운 문화가 넘치는 도시로, \n' + '\n' + '사람들과의 교류와 감성적인 경험을 동시에 할 수 있습니다.\n' + '\n' + 'ENFJ의 사회적 관심과 열정을 자극합니다.'
+        content: '활기차고 다채로운 문화가 넘치는 도시로, \n' + '\n' + '사람들과의 교류와 감성적인 경험을 동시에 할 수 있습니다.\n' + '\n' + '스페인은 ENFJ의 사회적 관심과 열정을 자극합니다.'
     },
     {
         country: '호주',
@@ -237,7 +237,7 @@ function Home() {
                             children: [
                                 "내 ",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    className: "text-[#1CC800]",
+                                    className: "text-[#F9F5E6]",
                                     children: "MBTI"
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/page.tsx",
@@ -308,25 +308,26 @@ function Home() {
                         lineNumber: 64,
                         columnNumber: 21
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        children: !isExist && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "text-red-500",
-                            children: "존재하지 않는 MBTI인 것 같아요😿"
-                        }, void 0, false, {
-                            fileName: "[project]/src/app/page.tsx",
-                            lineNumber: 89,
-                            columnNumber: 38
-                        }, this)
+                    !isExist && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "text-red-500",
+                        children: "존재하지 않는 MBTI인 것 같아요😿"
                     }, void 0, false, {
                         fileName: "[project]/src/app/page.tsx",
-                        lineNumber: 88,
-                        columnNumber: 21
+                        lineNumber: 89,
+                        columnNumber: 38
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            className: "px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 cursor-pointer mt-4",
+                            className: "px-4 py-2 bg-[#296e9D] text-white rounded hover:bg-[#1B3A4B] cursor-pointer",
                             onClick: handleClickButton,
-                            children: "내 MBTI와 맞는 해외여행지 보러가기"
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "text-[#FFFDF3]",
+                                children: "내 MBTI와 맞는 해외여행지 보러가기"
+                            }, void 0, false, {
+                                fileName: "[project]/src/app/page.tsx",
+                                lineNumber: 96,
+                                columnNumber: 29
+                            }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/page.tsx",
                             lineNumber: 92,

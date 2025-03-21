@@ -58,7 +58,7 @@ export default function Home() {
                 <main className="flex flex-col gap-8 row-start-2 items-center p-4">
                     <div className="mt-20">
                         <h1 className="text-3xl sm:text-4xl font-bold text-center">
-                            내 <span className="text-[#1CC800]">MBTI</span>에 어울리는<br /> 해외 여행지는 <br /> 어디일까?
+                            내 <span className="text-[#F9F5E6]">MBTI</span>에 어울리는<br /> 해외 여행지는 <br /> 어디일까?
                         </h1>
                     </div>
                     <div className="relative mt-10 w-full max-w-md">
@@ -85,15 +85,15 @@ export default function Home() {
                             </ul>
                         )}
                     </div>
-                    <div>
+
                         {!isExist && <div className="text-red-500">존재하지 않는 MBTI인 것 같아요😿</div>}
-                    </div>
+
                     <div>
                         <button
-                            className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700 cursor-pointer mt-4"
+                            className="px-4 py-2 bg-[#296e9D] text-white rounded hover:bg-[#1B3A4B] cursor-pointer"
                             onClick={handleClickButton}
                         >
-                            내 MBTI와 맞는 해외여행지 보러가기
+                            <span className="text-[#FFFDF3]">내 MBTI와 맞는 해외여행지 보러가기</span>
                         </button>
                     </div>
                 </main>
