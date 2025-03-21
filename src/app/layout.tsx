@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "MBTI to Trip",
   description: "recommend overseas travel dest by MBTI",
+    icons: {
+      icon: 'airplane.png'
+    }
 };
 
 export default function RootLayout({
