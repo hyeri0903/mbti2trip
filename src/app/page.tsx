@@ -57,10 +57,9 @@ export default function Home() {
     return (
         <>
             <Head>
-                <meta property="og:title" content="website"/>
                 <meta property="og:title" content="MBTI에 맞는 해외 여행지 추천"/>
                 <meta property="og:description" content="MBTI에 맞는 해외 여행지를 추천합니다."/>
-                <meta property="og:image" content="https://mbti-to-trip.vercel.app/thumbnail.jpg"/>
+                <meta property="og:image" content="/thumbnail.jpg" />
                 <meta property="og:url" content="https://mbti-to-trip.vercel.app"/>
                 <meta name="twitter:card" content="summary_large_image"/>
             </Head>
