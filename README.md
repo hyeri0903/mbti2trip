@@ -26,4 +26,5 @@ Travel destinations are recommended based on your MBTI personality type and the 
 <img width="378" height="650" alt="image" src="https://github.com/user-attachments/assets/f6b4ae26-287b-44dc-87a7-86525ff227c4" />
 
 
-
+### ETC
+- favicon 비행기 아이콘 제작자: Solid Icon Co - Flaticon
