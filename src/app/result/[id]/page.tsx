@@ -4,6 +4,7 @@ import React from 'react'
 import {useRouter, useParams} from "next/navigation";
 import {recommendation, countries} from "@/data/resultData";
 import html2canvas from 'html2canvas';
+import Footer from "@/app/components/Footer";
 
 //reference for recommendation trip by MBTI
 //https://blog.naver.com/eurof153/223766194381
@@ -40,7 +41,8 @@ export default function Result() {
     }
 
     return (
-        <div className="flex items-center justify-center min-h-screen">
+        <div className="flex flex-col min-h-screen">
+            <div className="flex items-center justify-center flex-grow">
             <div className="w-[400px] h-[685px] p-4 bg-white" id={"capture"}>
                 <main className="flex flex-col gap-8 row-start-2 items-center p-4">
                     <div className="mt-5">
@@ -50,11 +52,11 @@ export default function Result() {
                             해외여행지는?
                         </h1>
                     </div>
-                    <div className="flex flex-col items-center justify-center"> {/* flex로 수직 정렬 */}
+                    <div className="flex flex-col items-center justify-center">
                         <h2 className="text-4xl font-bold">{countryData?.country}</h2>
-                        <span className="text-6xl mt-2">{countryData?.emoji}</span> {/* emoji 아래에 margin 추가 */}
+                        <span className="text-6xl mt-2">{countryData?.emoji}</span>
                     </div>
-                    <div className="whitespace-pre-wrap text-center mt-4"> {/* emoji와 content 사이에 margin 추가 */}
+                    <div className="whitespace-pre-wrap text-center mt-4">
                         {countryData?.content}
                     </div>
                     <div>
@@ -71,6 +73,8 @@ export default function Result() {
                     </div>
                 </main>
             </div>
+            </div>
+            <Footer maxWidth="480px"/>
         </div>
     )
 }

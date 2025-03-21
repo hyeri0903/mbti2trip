@@ -55,6 +55,8 @@
     --color-white: #fff;
     --spacing: .25rem;
     --container-md: 28rem;
+    --text-xs: .75rem;
+    --text-xs--line-height: calc(1 / .75);
     --text-3xl: 1.875rem;
     --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
@@ -287,8 +289,16 @@
     position: sticky;
   }
 
+  .bottom-0 {
+    bottom: calc(var(--spacing) * 0);
+  }
+
   .z-10 {
     z-index: 10;
+  }
+
+  .z-20 {
+    z-index: 20;
   }
 
   .row-start-2 {
@@ -363,6 +373,10 @@
     }
   }
 
+  .mx-auto {
+    margin-inline: auto;
+  }
+
   .mt-0 {
     margin-top: calc(var(--spacing) * 0);
   }
@@ -381,6 +395,10 @@
 
   .mt-5 {
     margin-top: calc(var(--spacing) * 5);
+  }
+
+  .mt-8 {
+    margin-top: calc(var(--spacing) * 8);
   }
 
   .mt-10 {
@@ -523,12 +541,28 @@
     width: 100%;
   }
 
+  .max-w-480 {
+    max-width: calc(var(--spacing) * 480);
+  }
+
+  .max-w-\[454px\] {
+    max-width: 454px;
+  }
+
+  .max-w-\[480px\] {
+    max-width: 480px;
+  }
+
   .max-w-md {
     max-width: var(--container-md);
   }
 
   .flex-shrink {
     flex-shrink: 1;
+  }
+
+  .flex-grow {
+    flex-grow: 1;
   }
 
   .border-collapse {
@@ -553,6 +587,10 @@
 
   .items-center {
     align-items: center;
+  }
+
+  .justify-between {
+    justify-content: space-between;
   }
 
   .justify-center {
@@ -596,6 +634,14 @@
     background-color: var(--color-blue-500);
   }
 
+  .bg-gray-200 {
+    background-color: var(--color-gray-200);
+  }
+
+  .bg-gray-800 {
+    background-color: var(--color-gray-800);
+  }
+
   .bg-white {
     background-color: var(--color-white);
   }
@@ -628,6 +674,10 @@
     padding-block: calc(var(--spacing) * 2);
   }
 
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
+  }
+
   .text-center {
     text-align: center;
   }
@@ -647,6 +697,11 @@
     line-height: var(--tw-leading, var(--text-6xl--line-height));
   }
 
+  .text-xs {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+  }
+
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
@@ -662,6 +717,10 @@
 
   .text-\[\#6DAEDB\] {
     color: #6daedb;
+  }
+
+  .text-\[\#666\] {
+    color: #666;
   }
 
   .text-\[\#F9F5E6\] {
