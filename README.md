@@ -13,10 +13,10 @@ Travel destinations are recommended based on your MBTI personality type and the 
 
 |제목|내용|
 |------|---|
-|FE, BE|Next.js|
+|FE, BE|Next.js, Node.js (v22)|
 |Serve Deployment|vercel|
 |Image download|html2canvas|
-
+|Link Thumbnail|Open Graph|
 
 ## Project Screenshot
 
