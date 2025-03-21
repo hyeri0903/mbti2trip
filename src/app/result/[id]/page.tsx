@@ -22,6 +22,10 @@ export default function Result() {
         const element= document.getElementById('capture'); //캡처할 요소 선택
 
         if (element) {
+            // 버튼을 제외한 콘텐츠만 선택하기 위해 button 요소를 찾아서 제거
+            const buttons = element.querySelectorAll('button');
+            buttons.forEach(button => button.style.display = 'none'); // 버튼 숨기기
+
             html2canvas(element)
                 .then(canvas => {
                 const link = document.createElement("a");
@@ -29,6 +33,9 @@ export default function Result() {
                 link.href = canvas.toDataURL();  //데이터 URL로 이미지 변환
                 link.click();  // download link 클릭
             })
+            .finally(() => {
+                buttons.forEach(button => button.style.display = ''); // 버튼 다시 보이게 하기
+            });
         }
     }
 
