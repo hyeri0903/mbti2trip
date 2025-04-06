@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react';
-import {useState} from "react";
+import {useState, useEffect} from "react";
 import {useRouter} from "next/navigation";
 import {recommendation} from '@/data/resultData';
 import Head from 'next/head';
@@ -11,8 +11,17 @@ export default function Home() {
     const [text, setText] = useState("");
     const [isExist, setIsExist] = useState(true);
     const [filteredMBTIs, setFilteredMBTIs] = useState<string[]>([]);
+    const [clickCount, setClickCount] = useState(0);
     const router = useRouter();
     const allMBTIs = recommendation.map(x => x.id)
+
+    // 페이지 로드시 현재 클릭 수를 가져옴
+    useEffect(() => {
+        fetch('/api/clicks')
+            .then(res => res.json())
+            .then(data => setClickCount(data.clicks))
+            .catch(err => console.error('Error fetching click count:', err));
+    }, []);
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const value = e.target.value.toLowerCase();  // 소문자로 변환
@@ -22,11 +31,23 @@ export default function Home() {
         setFilteredMBTIs(filtered);
     }
 
-    function handleClickButton() {
+    async function handleClickButton() {
         setIsExist(true);
         const data = recommendation.find(x => x.id === text.toLowerCase());
 
         if (data) {
+            // 클릭 수 업데이트
+            try {
+                const response = await fetch('/api/clicks', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+            } catch (error) {
+                console.error('Error updating click count:', error);
+            }
+
             router.push(`/result/${data.id}`);
         } else {
             setIsExist(false);
@@ -73,7 +94,11 @@ export default function Home() {
                                     내 <span className="text-[#F9F5E6]">MBTI</span>에 어울리는<br/> 해외 여행지는 <br/> 어디일까?
                                 </h1>
                             </div>
-                            <div className="relative mt-10 w-full max-w-md">
+                            {/* 클릭 카운트 표시 */}
+                            <div className="text-white text-sm">
+                                지금까지 {clickCount}명이 여행지를 추천받았어요! ✈️
+                            </div>
+                            <div className="relative mt-5 w-full max-w-md">
                                 <input
                                     type="text"
                                     value={text.toUpperCase()}
