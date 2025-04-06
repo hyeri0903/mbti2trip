@@ -18,6 +18,12 @@ Travel destinations are recommended based on your MBTI personality type and the 
 |Image download|html2canvas|
 |Link Thumbnail|Open Graph|
 
+## Run local
+```
+mbti2trip/src
+npm run dev
+```
+
 ## Project Screenshot
 
 <img width="378" height="650" alt="image" src="https://github.com/user-attachments/assets/d4cc2555-ceed-444c-b94e-051d516211d2" />
