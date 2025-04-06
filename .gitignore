@@ -57,3 +57,14 @@ logs/
 ### Mac system files ###
 .DS_Store
 Thumbs.db
+
+### Next.js specific ###
+/.next/
+/out/
+*.pem
+.pnp
+.pnp.js
+/coverage
+*.tsbuildinfo
+next-env.d.ts
+.vercel
