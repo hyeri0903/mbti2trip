@@ -35,18 +35,6 @@
       "regex": "^/_not\\-found(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/_not\\-found(?:/)?$"
-    },
-    {
-      "page": "/favicon.ico",
-      "regex": "^/favicon\\.ico(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/favicon\\.ico(?:/)?$"
-    },
-    {
-      "page": "/users",
-      "regex": "^/users(?:/)?$",
-      "routeKeys": {},
-      "namedRegex": "^/users(?:/)?$"
     }
   ],
   "dataRoutes": [],

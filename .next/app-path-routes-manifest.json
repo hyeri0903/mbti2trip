@@ -1,7 +1,7 @@
 {
   "/_not-found/page": "/_not-found",
-  "/favicon.ico/route": "/favicon.ico",
+  "/api/clicks/route": "/api/clicks",
   "/page": "/",
-  "/users/page": "/users",
-  "/result/[id]/page": "/result/[id]"
+  "/result/[id]/page": "/result/[id]",
+  "/api/favicon/route": "/api/favicon"
 }

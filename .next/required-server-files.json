@@ -96,7 +96,7 @@
         "transform": "lodash/{{member}}"
       }
     },
-    "outputFileTracingRoot": "/Users/hailey/Desktop/study/mbti-app-2025",
+    "outputFileTracingRoot": "/Users/hailey/Desktop/study/mbti2trip",
     "experimental": {
       "nodeMiddleware": false,
       "cacheLife": {
@@ -146,6 +146,7 @@
       "linkNoTouchStart": false,
       "caseSensitiveRoutes": false,
       "clientSegmentCache": false,
+      "dynamicOnHover": false,
       "preloadEntriesOnStart": true,
       "clientRouterFilter": true,
       "clientRouterFilterRedirects": false,
@@ -173,9 +174,6 @@
       "swcTraceProfiling": false,
       "forceSwcTransforms": false,
       "largePageDataBytes": 128000,
-      "turbo": {
-        "root": "/Users/hailey/Desktop/study/mbti-app-2025"
-      },
       "typedRoutes": false,
       "typedEnv": false,
       "parallelServerCompiles": false,
@@ -186,6 +184,7 @@
       "optimizeServerReact": true,
       "useEarlyImport": false,
       "viewTransition": false,
+      "routerBFCache": false,
       "staleTimes": {
         "dynamic": 0,
         "static": 300
@@ -276,11 +275,14 @@
       "trustHostHeader": false,
       "isExperimentalCompile": false
     },
-    "htmlLimitedBots": "Mediapartners-Google|Slurp|DuckDuckBot|baiduspider|yandex|sogou|bitlybot|tumblr|vkShare|quora link preview|redditbot|ia_archiver|Bingbot|BingPreview|applebot|facebookexternalhit|facebookcatalog|Twitterbot|LinkedInBot|Slackbot|Discordbot|WhatsApp|SkypeUriPreview",
+    "htmlLimitedBots": "Mediapartners-Google|Slurp|DuckDuckBot|baiduspider|yandex|sogou|bitlybot|tumblr|vkShare|quora link preview|redditbot|ia_archiver|Bingbot|BingPreview|applebot|facebookexternalhit|facebookcatalog|Twitterbot|LinkedInBot|Slackbot|Discordbot|WhatsApp|SkypeUriPreview|Yeti",
     "bundlePagesRouterDependencies": false,
-    "configFileName": "next.config.ts"
+    "configFileName": "next.config.ts",
+    "turbopack": {
+      "root": "/Users/hailey/Desktop/study/mbti2trip"
+    }
   },
-  "appDir": "/Users/hailey/Desktop/study/mbti-app-2025",
+  "appDir": "/Users/hailey/Desktop/study/mbti2trip",
   "relativeAppDir": "",
   "files": [
     ".next/routes-manifest.json",
