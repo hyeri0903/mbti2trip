@@ -6,33 +6,6 @@ import {useRouter} from "next/navigation";
 import {recommendation} from '@/data/resultData';
 import Head from 'next/head';
 import Footer from './components/Footer';
-import { Metadata } from 'next';
-
-export const metadata: Metadata = {
-    title: 'MBTI에 맞는 해외 여행지 추천',
-    description: 'MBTI에 맞는 해외 여행지를 추천합니다.',
-    openGraph: {
-      title: 'MBTI에 맞는 해외 여행지 추천',
-      description: 'MBTI에 맞는 해외 여행지를 추천합니다.',
-      url: 'https://mbti-to-trip.vercel.app',
-      siteName: 'MBTI to Trip',
-      images: [
-        {
-          url: 'https://mbti-to-trip.vercel.app/airplane.png',
-          width: 800,
-          height: 600,
-          alt: '썸네일 이미지',
-        },
-      ],
-      type: 'website',
-    },
-    twitter: {
-      card: 'summary',
-      title: 'MBTI에 맞는 해외 여행지 추천',
-      description: 'MBTI에 맞는 해외 여행지를 추천합니다.',
-      images: ['https://mbti-to-trip.vercel.app/airplane.png'],
-    },
-};
 
 export default function Home() {
     const [text, setText] = useState("");
@@ -109,6 +82,22 @@ export default function Home() {
 
     return (
         <>
+            <Head>
+                <title>MBTI에 맞는 해외 여행지 추천</title>
+                {/* open graph */}
+                <meta name="description" content="MBTI에 맞는 해외 여행지를 추천합니다." />
+                <meta property="og:title" content="MBTI에 맞는 해외 여행지 추천"/>
+                <meta property="og:description" content="MBTI에 맞는 해외 여행지를 추천합니다."/>
+                <meta property="og:image" content="https://mbti-to-trip.vercel.app/airplane.png" />
+                <meta property="og:url" content="https://mbti-to-trip.vercel.app"/>
+                <meta property="og:type" content="website"/>
+                <meta property="og:site_name" content="MBTI to Trip"/>
+                {/* twitter card */}
+                <meta name="twitter:card" content="summary"/>
+                <meta name="twitter:title" content="MBTI에 맞는 해외 여행지 추천"/>
+                <meta name="twitter:description" content="MBTI에 맞는 해외 여행지를 추천합니다."/>
+                <meta name="twitter:image" content="https://mbti-to-trip.vercel.app/airplane.png"/>
+            </Head>
             <div className="min-h-screen flex flex-col items-center justify-center relative">
                 <div className="flex items-center justify-center w-full">
                     <div className="w-[400px] h-[685px] p-4 bg-[url('/background.jpg')] bg-cover bg-center relative">

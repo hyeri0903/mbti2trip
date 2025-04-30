@@ -13,11 +13,32 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "MBTI to Trip",
-  description: "recommend overseas travel dest by MBTI",
-    icons: {
-      icon: 'airplane.png'
-    }
+  title: "MBTI에 맞는 해외 여행지 추천",
+  description: "MBTI에 맞는 해외 여행지를 추천합니다.",
+  openGraph: {
+    title: "MBTI에 맞는 해외 여행지 추천",
+    description: "MBTI에 맞는 해외 여행지를 추천합니다.",
+    url: "https://mbti-to-trip.vercel.app",
+    siteName: "MBTI to Trip",
+    images: [
+      {
+        url: "https://mbti-to-trip.vercel.app/api/og",
+        width: 1200,
+        height: 630,
+        alt: "MBTI 여행지 추천 썸네일",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "MBTI에 맞는 해외 여행지 추천",
+    description: "MBTI에 맞는 해외 여행지를 추천합니다.",
+    images: ["https://mbti-to-trip.vercel.app/api/og"],
+  },
+  icons: {
+    icon: 'airplane.png'
+  }
 };
 
 export default function RootLayout({
