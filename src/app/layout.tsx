@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     siteName: "MBTI to Trip",
     images: [
       {
-        url: "https://mbti-to-trip.vercel.app/api/og",
+        url: "https://mbti-to-trip.vercel.app/airplane.png",
         width: 1200,
         height: 630,
         alt: "MBTI 여행지 추천 썸네일",
@@ -34,10 +34,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "MBTI에 맞는 해외 여행지 추천",
     description: "MBTI에 맞는 해외 여행지를 추천합니다.",
-    images: ["https://mbti-to-trip.vercel.app/api/og"],
+    images: ["https://mbti-to-trip.vercel.app/airplane.png"],
   },
   icons: {
-    icon: 'airplane.png'
+    icon: '/airplane.png'
   }
 };
 
