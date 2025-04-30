@@ -34,24 +34,29 @@ export default function Home() {
     async function handleClickButton() {
         setIsExist(true);
         const data = recommendation.find(x => x.id === text.toLowerCase());
-
         if (data) {
-            // 클릭 수 업데이트
-            try {
-                const response = await fetch('/api/clicks', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    }
-                });
-            } catch (error) {
-                console.error('Error updating click count:', error);
-            }
-
             router.push(`/result/${data.id}`);
         } else {
             setIsExist(false);
         }
+
+        // if (data) {
+        //     // 클릭 수 업데이트
+        //     try {
+        //         const response = await fetch('/api/clicks', {
+        //             method: 'POST',
+        //             headers: {
+        //                 'Content-Type': 'application/json'
+        //             }
+        //         });
+        //     } catch (error) {
+        //         console.error('Error updating click count:', error);
+        //     }
+
+           
+        // } else {
+        //     setIsExist(false);
+        // }
     }
 
     const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
