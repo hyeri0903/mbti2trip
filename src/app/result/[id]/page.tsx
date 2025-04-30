@@ -43,7 +43,7 @@ export default function Result() {
     return (
         <div className="flex flex-col min-h-screen">
             <div className="flex items-center justify-center flex-grow">
-            <div className="w-[400px] h-[685px] p-4 bg-white" id={"capture"}>
+            <div className="w-[400px] h-[685px] p-4 bg-white overflow-y-auto" id={"capture"}>
                 <main className="flex flex-col gap-8 row-start-2 items-center p-4">
                     <div className="mt-5">
                         <h1 className="text-3xl font-bold text-center">
@@ -59,13 +59,13 @@ export default function Result() {
                     <div className="whitespace-pre-wrap text-center mt-4">
                         {countryData?.content}
                     </div>
-                    <div>
-                        <button className="px-4 py-2 bg-[#296e9D] text-white rounded hover:bg-[#1B3A4B]  cursor-pointer"
+                    <div className="w-full">
+                        <button className="px-4 py-2 bg-[#296e9D] text-white rounded hover:bg-[#1B3A4B] cursor-pointer w-full"
                                 onClick={() => handleDownloadImage(params.id.toUpperCase())}
                         >
                             이미지로 저장하기
-                        </button> <br />
-                        <button className="mt-5 px-4 py-2 bg-[#296e9D] text-white rounded hover:bg-[#1B3A4B]  cursor-pointer"
+                        </button>
+                        <button className="mt-5 px-4 py-2 bg-[#296e9D] text-white rounded hover:bg-[#1B3A4B] cursor-pointer w-full"
                                 onClick={() => handleClickButton()}
                         >
                             메인으로 돌아가기
