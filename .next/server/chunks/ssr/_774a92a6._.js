@@ -77,84 +77,79 @@ const recommendation = [
 ];
 const countries = [
     {
-        country: '스위스',
-        emoji: '🇨🇭',
-        content: '편안하고 고요한 분위기를 자랑하는 나라로, \n' + '\n' + 'ISFJ의 세심함과 안정적인 여행 스타일에 맞는 곳이에요. \n' + '\n' + '아름다운 자연과 전통적인 매력이 가득한\n' + '\n' + ' 취리히에서 여유로운 여행을 즐길 수 있어요.\n'
+        country: '미국',
+        emoji: '🇺🇸',
+        content: '미국 샌프란시스코는 자유롭고 개방적인 분위기와\n' + '아름다운 자연 경관과 문화적 다양성이 있는 도시입니다.\n\n' + '실리콘밸리에는 구글, 애플, 넷플릭스 본사가 있으며\n' + '혁신과 창의성을 중요시하는 사람들이 모여 있습니다.\n\n' + 'INTJ와 같은 목표 지향적인 사람들에게\n' + '새로운 아이디어와 비즈니스 기회를 찾기에 완벽한 장소입니다.'
     },
     {
         country: '아이슬란드',
         emoji: '🇮🇸',
-        content: '독특한 자연 환경과 과학적인 탐구 요소가 많아\n' + '\n' + 'INTP에게 매력적인 곳이에요\n' + '\n' + '밤하늘의 오로라도 볼 수 있어요.\n'
+        content: '독특한 자연 환경과 과학적인 탐구 요소가 많아\n' + 'INTP에게 매력적인 곳이에요.\n\n' + '오로라, 빙하, 화산 등 독특한 자연현상을 관찰하고\n' + '밤하늘의 오로라를 감상할 수 있어요.'
     },
     {
         country: '프랑스',
         emoji: '🇫🇷',
-        content: ' 예술, 문학, 역사의 중심지로\n' + '\n' + ' INFJ가 좋아하는 창의적이고 깊이 있는 경험을 제공하는 도시입니다. \n' + '\n' + '미술관과 박물관, 책방, 그리고 조용한 카페에서의 시간을 보내며 \n' + '\n' + '사색적인 여행을 즐길 수 있습니다.'
+        content: '예술, 문학, 역사의 중심지로\n' + 'INFJ가 좋아하는 창의적이고 깊이 있는 경험을 제공하는 도시입니다.\n\n' + '미술관과 박물관, 책방, 그리고 조용한 카페에서의 시간을 보내며\n' + '사색적인 여행을 즐길 수 있습니다.'
     },
     {
         country: '뉴질랜드',
         emoji: '🇳🇿',
-        content: '뉴질랜드는 자연과 액티비티의 천국입니다.\n' + '\n' + ' 스카이다이빙, 번지점프, 하이킹, 제트보트 등 \n' + '\n' + '액티브한 활동이 넘쳐나며, \n' + '\n' + '스릴 넘치는 경험을 즐길 수 있는 곳이에요.'
+        content: '뉴질랜드는 자연과 액티비티의 천국입니다.\n\n' + '스카이다이빙, 번지점프, 하이킹, 제트보트 등\n' + '액티브한 활동이 넘쳐나며,\n' + '스릴 넘치는 경험을 즐길 수 있는 곳이에요.'
     },
     {
         country: '영국',
         emoji: '🇬🇧',
-        content: '역사적이고 문화적으로 중요한 도시로, \n' + '\n' + '잘 정리된 일정과 계획적인 여행을 선호하는 ISTJ에게 완벽한곳이에요.\n' + '\n' + '관광 명소들이 체계적으로 잘 갖춰져 있어\n' + '\n' + ' 여행을 효율적으로 할 수 있어요.'
+        content: '역사적이고 문화적으로 중요한 도시로,\n' + '잘 정리된 일정과 계획적인 여행을 선호하는 ISTJ에게 완벽한 곳이에요.\n\n' + '관광 명소들이 체계적으로 잘 갖춰져 있어\n' + '여행을 효율적으로 할 수 있어요.'
     },
     {
         country: '하와이',
         emoji: '🌺',
-        content: '서핑, 하이킹, 다이빙 등 \n' + '\n' + '다양한 액티비티가 가득한 곳으로,\n' + '\n' + ' 도전적인 경험과 자연 속에서의 \n' + '\n' + '자유를 중시하는 ISTP에게 적합한곳이에요.'
+        content: '서핑, 하이킹, 다이빙 등\n' + '다양한 액티비티가 가득한 곳으로,\n\n' + '도전적인 경험과 자연 속에서의\n' + '자유를 중시하는 ISTP에게 적합한 곳이에요.'
     },
     {
-        country: '괌',
-        emoji: '🇬🇺',
-        content: '스카이다이빙, 제트스키 등 많은 수상스포츠와 쇼를 즐길 수 있는 괌은\n' + '\n' + ' 타고난 리더십으로 새로운 성취를 선호하는 타입인 ENTJ에게 딱 맞는 여행지에요~\n' + '\n' + '도전적인 액티비티를 통해 스릴과 성취감을 동시에 느낄 수 있어\n' + '\n' + 'ENTJ의 모험심과 목표 지향적인 성향을 충족시켜줍니다.'
+        country: '스위스',
+        emoji: '🇨🇭',
+        content: '편안하고 고요한 분위기를 자랑하는 나라로,\n' + 'ISFJ의 세심함과 안정적인 여행 스타일에 맞는 곳이에요.\n\n' + '아름다운 자연과 전통적인 매력이 가득한\n' + '취리히에서 여유로운 여행을 즐길 수 있어요.'
     },
     {
         country: '태국',
         emoji: '🇹🇭',
-        content: ' 치앙마이는 자연과 문화가 결합된 평화로운 도시로,\n' + ' ISFP가 즐길 수 있는 \n' + '아름다운 사원, 전통적인 마을 풍경과 \n' + '자연 속에서의 편안한 휴식을 느낄수 있습니다.\n' + '\n' + '치앙마이의 저녁 시장에서 \n' + '예술적인 물건들을 구경 할 수 있어요!'
+        content: '치앙마이는 자연과 문화가 결합된 평화로운 도시로,\n' + 'ISFP가 즐길 수 있는 아름다운 사원과 전통적인 마을이 있습니다.\n\n' + '자연 속에서의 편안한 휴식을 느낄 수 있으며,\n' + '치앙마이의 저녁 시장에서 예술적인 물건들을 구경할 수 있어요!'
     },
     {
-        country: '미국',
-        emoji: '🇺🇸',
-        content: '미국 샌프란시스코는 자유롭고 개방적인 분위기와 \n' + '아름다운 자연 경관과 문화적인 다양한 도시입니다.\n' + '\n' + '실리콘밸리에는 구글,애플, 넷플릭스 본사가 있으며\n' + '혁신과 창의성을 중요시하는 사람들이 모여 있습니다.\n' + '\n' + 'INTJ와 같은 목표 지향적인 사람들에게 새로운 아이디어와 비즈니스 기회를 찾기에 완벽한 장소입니다.'
+        country: '괌',
+        emoji: '🇬🇺',
+        content: '스카이다이빙, 제트스키 등 많은 수상스포츠와\n' + '쇼를 즐길 수 있는 괌은 ENTJ에게 딱 맞는 여행지에요.\n\n' + '도전적인 액티비티를 통해 스릴과 성취감을 동시에 느낄 수 있어\n' + 'ENTJ의 모험심과 목표 지향적인 성향을 충족시켜줍니다.'
     },
     {
         country: '포르투갈',
         emoji: '🇵🇹',
-        content: '포르투갈은 예술, 역사, 혁신이 결합된 도시로, \n' + '\n' + '자유로운 분위기와 창의적인 장소들이 많아\n' + '\n' + ' ENTP에게 흥미로운 경험을 제공해요.\n' + '\n' + '리스본과 포르투에서 만날 수 있는 알록달록한 아줄레주 타일과 거리 예술은\n' + '\n' + '전통과 현대가 공존하는 독특한 매력을 느낄 수 있어요.\n'
+        content: '포르투갈은 예술, 역사, 혁신이 결합된 도시로,\n' + '자유로운 분위기와 창의적인 장소들이 많아\n' + 'ENTP에게 흥미로운 경험을 제공해요.\n\n' + '리스본과 포르투에서 만날 수 있는 알록달록한 아줄레주 타일과\n' + '거리 예술은 전통과 현대가 공존하는 독특한 매력을 느낄 수 있어요.'
     },
     {
         country: '스페인',
         emoji: '🇪🇸',
-        content: '스페인은 활기차고 다채로운 문화가 넘치는 도시로, \n' + '사람들과의 교류와 감성적인 경험을 동시에 할 수 있습니다.\n' + '\n' + '특히 바르셀로나와 마드리드의 예술과 역사적 명소는\n' + 'ENFJ가 사랑하는 사람들과 진정한 유대감을 형성할 수 있는 기회를 만들어줍니다.'
+        content: '스페인은 활기차고 다채로운 문화가 넘치는 도시로,\n' + '사람들과의 교류와 감성적인 경험을 동시에 할 수 있습니다.\n\n' + '특히 바르셀로나와 마드리드의 예술과 역사적 명소는\n' + 'ENFJ가 사랑하는 사람들과 진정한 유대감을 형성할 수 있는\n' + '기회를 만들어줍니다.'
     },
     {
         country: '호주',
         emoji: '🇦🇺',
-        content: '호주는 활기찬 도시 분위기와 자연을 동시에 경험할 수 있는 곳으로\n' + '\n' + '다양한 액티비티와 사람들과의 만남이 ENFP의 성향과 잘 맞습니다.\n' + '\n' + '시드니의 해변과 멜버른의 예술적인 거리, ' + '\n' + '그리고 그레이트 배리어 리프와 같은 자연의 경이로움을 느낄 수 있어요!'
+        content: '호주는 활기찬 도시 분위기와 자연을 동시에 경험할 수 있는 곳으로\n' + 'ENFP의 성향과 잘 맞는 다양한 액티비티와 만남이 있습니다.\n\n' + '시드니의 해변과 멜버른의 예술적인 거리,\n' + '그리고 그레이트 배리어 리프와 같은 자연의 경이로움을 느낄 수 있어요!'
     },
     {
         country: '싱가포르',
         emoji: '🇸🇬',
-        content: '효율적인 대중교통 시스템과 질서 있는 도시로,\n' + '\n' + ' ESTJ가 선호하는 정리된 환경을 제공해요.\n' + '\n' + '계획적인 여행에 적합한 도시에요.'
-    },
-    {
-        country: '뉴질랜드',
-        emoji: '🇳🇿',
-        content: '뉴질랜드는 자연과 액티비티의 천국입니다.\n' + '\n' + ' 스카이다이빙, 번지점프, 하이킹, 제트보트 등 \n' + '\n' + '액티브한 활동이 넘쳐나며, \n' + '\n' + '스릴 넘치는 경험을 즐길 수 있는 곳이에요.'
+        content: '효율적인 대중교통 시스템과 질서 있는 도시로,\n' + 'ESTJ가 선호하는 정리된 환경을 제공해요.\n\n' + '계획적인 여행에 적합하며,\n' + '현대적인 도시 관광을 즐길 수 있는 곳이에요.'
     },
     {
         country: '이탈리아',
         emoji: '🇮🇹',
-        content: '예술과 역사적인 명소가 가득한 이탈리아 피렌체는\n' + '\n' + '친구나 가족과 함께 여행하기에 좋은 장소입니다.\n' + '\n' + '도시를 거닐며 미켈란젤로의 다비드상이나 우피치 미술관 같은 문화유산을 탐방할 수 있으며\n' + '\n' + '사회적이고 감성적인 교감을 즐기는 ESFJ에게 완벽한 환경이에요!'
+        content: '예술과 역사적인 명소가 가득한 이탈리아 피렌체는\n' + '친구나 가족과 함께 여행하기에 좋은 장소입니다.\n\n' + '도시를 거닐며 미켈란젤로의 다비드상이나 우피치 미술관 같은\n' + '문화유산을 탐방할 수 있으며, 사회적이고 감성적인 교감을\n' + '즐기는 ESFJ에게 완벽한 환경이에요!'
     },
     {
         country: '브라질',
         emoji: '🇧🇷',
-        content: '브라질은 에너지 넘치는 카니발 문화와 함께 해변, 파티, 활기찬 분위기를 제공합니다. \n' + '\n' + 'ESFP는 사람들과의 소통, 음악, 춤을 즐기며' + '\n' + ' 여행을 통해 다양한 경험을 얻을 수 있습니다.' + '\n' + '\n' + '리우데자네이루의 코르코바도 산과 예수상,' + '\n' + '이구아수 폭포의 장엄한 자연 경관은 놀라운 경험을 선사합니다.'
+        content: '브라질은 에너지 넘치는 카니발 문화와 함께\n' + '해변, 파티, 활기찬 분위기를 제공합니다.\n\n' + 'ESFP는 사람들과의 소통, 음악, 춤을 즐기며\n' + '다양한 경험을 얻을 수 있습니다.\n\n' + '리우데자네이루의 코르코바도 산과 예수상,\n' + '이구아수 폭포의 장엄한 자연 경관은 놀라운 경험을 선사합니다.'
     }
 ];
 }}),
@@ -214,18 +209,35 @@ function Home() {
     const [text, setText] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("");
     const [isExist, setIsExist] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(true);
     const [filteredMBTIs, setFilteredMBTIs] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [clickCount, setClickCount] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])(0);
     const router = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useRouter"])();
     const allMBTIs = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$resultData$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["recommendation"].map((x)=>x.id);
+    // 페이지 로드시 현재 클릭 수를 가져옴
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useEffect"])(()=>{
+        fetch('/api/clicks').then((res)=>res.json())// .then(data => setClickCount(data.clicks))
+        .catch((err)=>console.error('Error fetching click count:', err));
+    }, []);
     const handleChange = (e)=>{
         const value = e.target.value.toLowerCase(); // 소문자로 변환
         setText(value);
         const filtered = allMBTIs.filter((x)=>x.startsWith(value));
         setFilteredMBTIs(filtered);
     };
-    function handleClickButton() {
+    async function handleClickButton() {
         setIsExist(true);
         const data = __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$data$2f$resultData$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["recommendation"].find((x)=>x.id === text.toLowerCase());
         if (data) {
+            // 클릭 수 업데이트
+            try {
+                const response = await fetch('/api/clicks', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
+            } catch (error) {
+                console.error('Error updating click count:', error);
+            }
             router.push(`/result/${data.id}`);
         } else {
             setIsExist(false);
@@ -248,7 +260,7 @@ function Home() {
                 children: part
             }, index, false, {
                 fileName: "[project]/src/app/page.tsx",
-                lineNumber: 52,
+                lineNumber: 73,
                 columnNumber: 19
             }, this) // 일치하는 부분은 파란색
              : part);
@@ -262,7 +274,7 @@ function Home() {
                         content: "MBTI에 맞는 해외 여행지 추천"
                     }, void 0, false, {
                         fileName: "[project]/src/app/page.tsx",
-                        lineNumber: 60,
+                        lineNumber: 81,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -270,7 +282,7 @@ function Home() {
                         content: "MBTI에 맞는 해외 여행지를 추천합니다."
                     }, void 0, false, {
                         fileName: "[project]/src/app/page.tsx",
-                        lineNumber: 61,
+                        lineNumber: 82,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -278,7 +290,7 @@ function Home() {
                         content: "/thumbnail.jpg"
                     }, void 0, false, {
                         fileName: "[project]/src/app/page.tsx",
-                        lineNumber: 62,
+                        lineNumber: 83,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -286,7 +298,7 @@ function Home() {
                         content: "https://mbti-to-trip.vercel.app"
                     }, void 0, false, {
                         fileName: "[project]/src/app/page.tsx",
-                        lineNumber: 63,
+                        lineNumber: 84,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("meta", {
@@ -294,13 +306,13 @@ function Home() {
                         content: "summary_large_image"
                     }, void 0, false, {
                         fileName: "[project]/src/app/page.tsx",
-                        lineNumber: 64,
+                        lineNumber: 85,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/page.tsx",
-                lineNumber: 59,
+                lineNumber: 80,
                 columnNumber: 13
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -324,35 +336,35 @@ function Home() {
                                                     children: "MBTI"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/page.tsx",
-                                                    lineNumber: 73,
+                                                    lineNumber: 94,
                                                     columnNumber: 39
                                                 }, this),
                                                 "에 어울리는",
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                     fileName: "[project]/src/app/page.tsx",
-                                                    lineNumber: 73,
+                                                    lineNumber: 94,
                                                     columnNumber: 89
                                                 }, this),
                                                 " 해외 여행지는 ",
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                                     fileName: "[project]/src/app/page.tsx",
-                                                    lineNumber: 73,
+                                                    lineNumber: 94,
                                                     columnNumber: 103
                                                 }, this),
                                                 " 어디일까?"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/page.tsx",
-                                            lineNumber: 72,
+                                            lineNumber: 93,
                                             columnNumber: 33
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/page.tsx",
-                                        lineNumber: 71,
+                                        lineNumber: 92,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "relative mt-10 w-full max-w-md",
+                                        className: "relative mt-5 w-full max-w-md",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
                                                 type: "text",
@@ -363,7 +375,7 @@ function Home() {
                                                 className: "w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/page.tsx",
-                                                lineNumber: 77,
+                                                lineNumber: 102,
                                                 columnNumber: 33
                                             }, this),
                                             filteredMBTIs.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
@@ -377,18 +389,18 @@ function Home() {
                                                         ]
                                                     }, item, true, {
                                                         fileName: "[project]/src/app/page.tsx",
-                                                        lineNumber: 89,
+                                                        lineNumber: 114,
                                                         columnNumber: 45
                                                     }, this))
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/page.tsx",
-                                                lineNumber: 87,
+                                                lineNumber: 112,
                                                 columnNumber: 37
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/page.tsx",
-                                        lineNumber: 76,
+                                        lineNumber: 101,
                                         columnNumber: 29
                                     }, this),
                                     !isExist && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -396,7 +408,7 @@ function Home() {
                                         children: "존재하지 않는 MBTI인 것 같아요😿"
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/page.tsx",
-                                        lineNumber: 101,
+                                        lineNumber: 126,
                                         columnNumber: 42
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -408,46 +420,46 @@ function Home() {
                                                 children: "내 MBTI와 맞는 해외여행지 보러가기"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/page.tsx",
-                                                lineNumber: 108,
+                                                lineNumber: 133,
                                                 columnNumber: 37
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/page.tsx",
-                                            lineNumber: 104,
+                                            lineNumber: 129,
                                             columnNumber: 33
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/page.tsx",
-                                        lineNumber: 103,
+                                        lineNumber: 128,
                                         columnNumber: 29
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/page.tsx",
-                                lineNumber: 70,
+                                lineNumber: 91,
                                 columnNumber: 25
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/page.tsx",
-                            lineNumber: 69,
+                            lineNumber: 90,
                             columnNumber: 21
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/page.tsx",
-                        lineNumber: 68,
+                        lineNumber: 89,
                         columnNumber: 17
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$components$2f$Footer$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                         maxWidth: "400px"
                     }, void 0, false, {
                         fileName: "[project]/src/app/page.tsx",
-                        lineNumber: 114,
+                        lineNumber: 139,
                         columnNumber: 17
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/page.tsx",
-                lineNumber: 67,
+                lineNumber: 88,
                 columnNumber: 13
             }, this)
         ]

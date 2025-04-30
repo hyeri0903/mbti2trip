@@ -19,7 +19,7 @@ export default function Home() {
     useEffect(() => {
         fetch('/api/clicks')
             .then(res => res.json())
-            .then(data => setClickCount(data.clicks))
+            // .then(data => setClickCount(data.clicks))
             .catch(err => console.error('Error fetching click count:', err));
     }, []);
 
@@ -95,9 +95,9 @@ export default function Home() {
                                 </h1>
                             </div>
                             {/* 클릭 카운트 표시 */}
-                            <div className="text-white text-sm">
+                            {/* <div className="text-white text-sm">
                                 지금까지 {clickCount}명이 여행지를 추천받았어요! ✈️
-                            </div>
+                            </div> */}
                             <div className="relative mt-5 w-full max-w-md">
                                 <input
                                     type="text"
