@@ -7,6 +7,8 @@ import {recommendation} from '@/data/resultData';
 import Head from 'next/head';
 import Footer from './components/Footer';
 import { supabase } from '@/lib/supabase';
+import type { Session } from '@supabase/supabase-js';
+
 
 export default function Home() {
     const [text, setText] = useState("");
@@ -16,9 +18,20 @@ export default function Home() {
     const router = useRouter();
     const allMBTIs = recommendation.map(x => x.id)
     const [totalCount, setTotalCount] = useState(0);
+    const [session, setSession] = useState<Session | null>(null);
 
     // 페이지 로드시 현재 클릭 수를 가져옴
     useEffect(() => {
+        supabase.auth.getSession().then(({ data: { session } }) => {
+            setSession(session);
+          });
+      
+          const {
+            data: { subscription },
+          } = supabase.auth.onAuthStateChange((_event, session) => {
+            setSession(session);
+          });
+
         getClickCount().then(count => setTotalCount(count));
     }, []);
 
@@ -26,12 +39,12 @@ export default function Home() {
         const { count, error } = await supabase
             .from('test_results')
             .select('*', { count: 'exact', head: true });
-    
-        if (error) {
+
+        if (error || count == null) {
             console.error('Error fetching count:', error);
             return 0;
         }
-        return count ?? 0;
+        return count;
     }
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -52,21 +65,19 @@ export default function Home() {
         }
 
         try {
-             // Supabase에 테스트 결과 데이터 저장
-             const { error } = await supabase
-             .from('test_results')
-             .insert([
-                 { 
-                     mbti: text.toLowerCase()
-                 }
-             ]);
+            // Supabase에 테스트 결과 데이터 저장
+            const { error } = await supabase
+                .from('test_results')
+                .insert([
+                    { mbti: text.toLowerCase() }
+                ]);
 
+             
             if (error) {
                 console.error('Error saving result:', error);
             } else {
                 console.log('result saved successfully!');
             }
-            
 
             router.push(`/result/${resultData.id}`);
         } catch (error) {
