@@ -44,12 +44,13 @@ export default function Home() {
 
     async function handleClickButton() {
         setIsExist(true);
-        const data = recommendation.find(x => x.id === text.toLowerCase());
+        const resultData = recommendation.find(x => x.id === text.toLowerCase());
 
-        if (!data) {
+        if (!resultData) {
             setIsExist(false);
             return;
         }
+
         try {
              // Supabase에 테스트 결과 데이터 저장
              const { error } = await supabase
@@ -67,7 +68,7 @@ export default function Home() {
             }
             
 
-            router.push(`/result/${data.id}`);
+            router.push(`/result/${resultData.id}`);
         } catch (error) {
             console.error('Unexpected error:', error);
         }
