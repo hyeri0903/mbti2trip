@@ -6,6 +6,7 @@ import {useRouter} from "next/navigation";
 import {recommendation} from '@/data/resultData';
 import Head from 'next/head';
 import Footer from './components/Footer';
+import { supabase } from '@/lib/supabase';
 
 export default function Home() {
     const [text, setText] = useState("");
@@ -34,29 +35,29 @@ export default function Home() {
     async function handleClickButton() {
         setIsExist(true);
         const data = recommendation.find(x => x.id === text.toLowerCase());
-        if (data) {
-            router.push(`/result/${data.id}`);
-        } else {
+
+        if (!data) {
             setIsExist(false);
+            return;
         }
+        try {
+             // Supabase에 테스트 결과 데이터 저장
+             const { error } = await supabase
+             .from('test_results')
+             .insert([
+                 { 
+                     mbti: text.toLowerCase()
+                 }
+             ]);
 
-        // if (data) {
-        //     // 클릭 수 업데이트
-        //     try {
-        //         const response = await fetch('/api/clicks', {
-        //             method: 'POST',
-        //             headers: {
-        //                 'Content-Type': 'application/json'
-        //             }
-        //         });
-        //     } catch (error) {
-        //         console.error('Error updating click count:', error);
-        //     }
+            if (error) {
+                console.error('Error saving result:', error);
+            }
 
-           
-        // } else {
-        //     setIsExist(false);
-        // }
+            router.push(`/result/${data.id}`);
+        } catch (error) {
+            console.error('Unexpected error:', error);
+        }
     }
 
     const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
