@@ -20,18 +20,19 @@ export default function Home() {
     const [totalCount, setTotalCount] = useState(0);
     const [session, setSession] = useState<Session | null>(null);
 
-    // 페이지 로드시 현재 클릭 수를 가져옴
+    
     useEffect(() => {
-        supabase.auth.getSession().then(({ data: { session } }) => {
-            setSession(session);
-          });
+        // supabase.auth.getSession().then(({ data: { session } }) => {
+        //     setSession(session);
+        //   });
       
-          const {
-            data: { subscription },
-          } = supabase.auth.onAuthStateChange((_event, session) => {
-            setSession(session);
-          });
+        //   const {
+        //     data: { subscription },
+        //   } = supabase.auth.onAuthStateChange((_event, session) => {
+        //     setSession(session);
+        //   });
 
+        // 페이지 로드시 현재 클릭 수를 가져옴
         getClickCount().then(count => setTotalCount(count));
     }, []);
 
@@ -55,6 +56,15 @@ export default function Home() {
         setFilteredMBTIs(filtered);
     }
 
+    async function signInWithGithub() {
+        const { data, error } = await supabase.auth.signInWithOAuth({
+          provider: 'github',
+        })
+        if (error) {
+            console.log('Error signIn with Github!', error);
+        }
+    }
+
     async function handleClickButton() {
         setIsExist(true);
         const resultData = recommendation.find(x => x.id === text.toLowerCase());
@@ -63,6 +73,8 @@ export default function Home() {
             setIsExist(false);
             return;
         }
+      
+        signInWithGithub();
 
         try {
             // Supabase에 테스트 결과 데이터 저장
