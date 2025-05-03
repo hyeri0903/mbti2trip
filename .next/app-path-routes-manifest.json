@@ -3,5 +3,6 @@
   "/api/clicks/route": "/api/clicks",
   "/page": "/",
   "/result/[id]/page": "/result/[id]",
-  "/api/favicon/route": "/api/favicon"
+  "/api/favicon/route": "/api/favicon",
+  "/api/og/route": "/api/og"
 }

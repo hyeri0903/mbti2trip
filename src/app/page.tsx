@@ -12,17 +12,27 @@ export default function Home() {
     const [text, setText] = useState("");
     const [isExist, setIsExist] = useState(true);
     const [filteredMBTIs, setFilteredMBTIs] = useState<string[]>([]);
-    const [clickCount, setClickCount] = useState(0);
+    // const [clickCount, setClickCount] = useState(0);
     const router = useRouter();
     const allMBTIs = recommendation.map(x => x.id)
+    const [totalCount, setTotalCount] = useState(0);
 
     // 페이지 로드시 현재 클릭 수를 가져옴
     useEffect(() => {
-        fetch('/api/clicks')
-            .then(res => res.json())
-            // .then(data => setClickCount(data.clicks))
-            .catch(err => console.error('Error fetching click count:', err));
+        getClickCount().then(count => setTotalCount(count));
     }, []);
+
+    const getClickCount = async () => {
+        const { count, error } = await supabase
+            .from('test_results')
+            .select('*', { count: 'exact', head: true });
+    
+        if (error) {
+            console.error('Error fetching count:', error);
+            return 0;
+        }
+        return count ?? 0;
+    }
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const value = e.target.value.toLowerCase();  // 소문자로 변환
@@ -52,7 +62,10 @@ export default function Home() {
 
             if (error) {
                 console.error('Error saving result:', error);
+            } else {
+                console.log('result saved successfully!');
             }
+            
 
             router.push(`/result/${data.id}`);
         } catch (error) {
@@ -108,10 +121,10 @@ export default function Home() {
                                     내 <span className="text-[#F9F5E6]">MBTI</span>에 어울리는<br/> 해외 여행지는 <br/> 어디일까?
                                 </h1>
                             </div>
-                            {/* 클릭 카운트 표시 */}
-                            {/* <div className="text-white text-sm">
-                                지금까지 {clickCount}명이 여행지를 추천받았어요! ✈️
-                            </div> */}
+                            {/* 총 테스트 횟수 표시 */}
+                            <div className="text-white text-sm">
+                                지금까지 <span className='text-[#FF3B30]'>{totalCount}명</span>이 여행지를 추천받았어요! ✈️
+                            </div>
                             <div className="relative mt-5 w-full max-w-md">
                                 <input
                                     type="text"
