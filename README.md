@@ -14,7 +14,8 @@ Travel destinations are recommended based on your MBTI personality type and the 
 |제목|내용|
 |------|---|
 |FE, BE|Next.js (v15)|
-|Serve Deployment|vercel|
+|Deployment|vercel|
+|Database|Supabase (v2.22.12)|
 |Image download|html2canvas|
 |Link Thumbnail|Open Graph|
 
