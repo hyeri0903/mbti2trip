@@ -132,6 +132,7 @@ export default function Home() {
                                     type="text"
                                     value={text.toUpperCase()}
                                     onChange={handleChange}
+                                    onInput={(e) => setText(e.currentTarget.value.toLowerCase())}
                                     onKeyDown={handleKeyPress}
                                     placeholder="MBTI를 입력하세요. 예) ENFJ"
                                     className="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
