@@ -62,13 +62,12 @@ export default function Home() {
                 .insert([
                     { mbti: text.toLowerCase() }
                 ]);
-
              
-            if (error) {
-                console.error('Error saving result:', error);
-            } else {
-                console.log('result saved successfully!');
-            }
+            // if (error) {
+            //     console.error('Error saving result:', error);
+            // } else {
+            //     console.log('result saved successfully!');
+            // }
 
             router.push(`/result/${resultData.id}`);
         } catch (error) {
