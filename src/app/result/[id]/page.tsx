@@ -41,7 +41,7 @@ export default function Result() {
     }
 
     return (
-        <div className="flex flex-col min-h-screen text-black">
+        <div className="flex flex-col min-h-screen text-black dark:text-white">
             <div className="flex items-center justify-center flex-grow">
             <div className="w-[400px] h-[685px] p-4 overflow-y-auto" id={"capture"}>
                 <main className="flex flex-col gap-8 row-start-2 items-center p-4">
