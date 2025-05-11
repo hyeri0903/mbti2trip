@@ -41,13 +41,13 @@ export default function Result() {
     }
 
     return (
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col min-h-screen text-black">
             <div className="flex items-center justify-center flex-grow">
-            <div className="w-[400px] h-[685px] p-4 bg-white overflow-y-auto" id={"capture"}>
+            <div className="w-[400px] h-[685px] p-4 overflow-y-auto" id={"capture"}>
                 <main className="flex flex-col gap-8 row-start-2 items-center p-4">
                     <div className="mt-5">
                         <h1 className="text-3xl font-bold text-center">
-                            <span className="text-[#6DAEDB]">{params.id.toUpperCase()}</span>
+                            <span className="text-blue-400">{params.id.toUpperCase()}</span>
                             에게 꼭 맞는<br />
                             해외여행지는?
                         </h1>
