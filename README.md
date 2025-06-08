@@ -34,5 +34,6 @@ npm run dev
 
 
 ### ETC
-- Database 구조 보러가기 : [Database Structure](https://github.com/hyeri0903/mbti2trip/wiki/Database-Structure)
+- Project 아키텍처 : [Project Architecture](https://github.com/hyeri0903/mbti2trip/wiki/Project-Architecture)
+- Database 구조 : [Database Structure](https://github.com/hyeri0903/mbti2trip/wiki/Database-Structure)
 - favicon 비행기 아이콘 제작자: Solid Icon Co - Flaticon
