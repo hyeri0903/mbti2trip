@@ -124,9 +124,11 @@ export default function Home() {
                                 </h1>
                             </div>
                             {/* 총 테스트 횟수 표시 */}
+                            {/*
                             <div className="text-white text-sm">
                                 지금까지 <span className='text-[#FF3B30]'>{totalCount}명</span>이 여행지를 추천받았어요! ✈️
                             </div>
+                            */}
                             <div className="relative mt-5 w-full max-w-md">
                                 <input
                                     type="text"
